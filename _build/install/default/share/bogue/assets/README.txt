@@ -1,0 +1,1 @@
+../../../../../default/bogue/share/assets/README.txt

@@ -4,7 +4,7 @@ open Bogue
 module W = Widget
 module L = Layout
 
-let image_file = "risk_board.png"
+let image_file = "%assets/images/chl.png"
 
 let _ = print_endline (Continent.string_of_continent_list CountryData.all_countries ContinentData.all_continents)
 
