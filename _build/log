@@ -1,10 +1,10 @@
 # dune exec bin/main.exe
 # OCAMLPARAM: unset
-# Workspace root: /Users/franzferdinand/CS-3110-Final-Project-Risk
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vq/pkzc0pc53_v9lgkn1pjnklgr0000gn/T/dunee9dbd7.output 2> /dev/null
+# Workspace root: /Users/franzferdinand/riskgui
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/vq/pkzc0pc53_v9lgkn1pjnklgr0000gn/T/dune9d30a6.output 2> /dev/null
 # Auto-detected concurrency: 12
 # disable binary cache
-$ /Users/franzferdinand/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vq/pkzc0pc53_v9lgkn1pjnklgr0000gn/T/dune07ea21.output
+$ /Users/franzferdinand/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folders/vq/pkzc0pc53_v9lgkn1pjnklgr0000gn/T/dune9f9a58.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -33,18 +33,16 @@ $ /Users/franzferdinand/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folder
 #            "/Users/franzferdinand/.opam/cs3110-2021fa/lib"
 #        ; "DUNE_OCAML_STDLIB" :
 #            "/Users/franzferdinand/.opam/cs3110-2021fa/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" :
-#            "/Users/franzferdinand/CS-3110-Final-Project-Risk"
-#        ; "INSIDE_DUNE" :
-#            "/Users/franzferdinand/CS-3110-Final-Project-Risk/_build/default"
+#        ; "DUNE_SOURCEROOT" : "/Users/franzferdinand/riskgui"
+#        ; "INSIDE_DUNE" : "/Users/franzferdinand/riskgui/_build/default"
 #        ; "MANPATH" :
-#            "/Users/franzferdinand/CS-3110-Final-Project-Risk/_build/install/default/bin"
+#            "/Users/franzferdinand/riskgui/_build/install/default/bin"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/franzferdinand/CS-3110-Final-Project-Risk/_build/install/default/lib"
+#            "/Users/franzferdinand/riskgui/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/franzferdinand/CS-3110-Final-Project-Risk/_build/install/default/lib"
+#            "/Users/franzferdinand/riskgui/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/franzferdinand/CS-3110-Final-Project-Risk/_build/install/default/lib/toplevel"
+#            "/Users/franzferdinand/riskgui/_build/install/default/lib/toplevel"
 #        }
 #  ; findlib_path =
 #      [ External "/Users/franzferdinand/.opam/cs3110-2021fa/lib" ]
@@ -120,4 +118,4 @@ $ /Users/franzferdinand/.opam/cs3110-2021fa/bin/ocamlc.opt -config > /var/folder
 #      ; windows_unicode = false
 #      }
 #  }
-# Workspace root: /Users/franzferdinand/CS-3110-Final-Project-Risk
+# Workspace root: /Users/franzferdinand/riskgui

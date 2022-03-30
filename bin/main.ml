@@ -4,6 +4,8 @@ open Bogue
 module W = Widget
 module L = Layout
 
+let image_file = "risk_board.png"
+
 let _ = print_endline (Continent.string_of_continent_list CountryData.all_countries ContinentData.all_continents)
 
 let p1 : Player.player = 
@@ -12,11 +14,11 @@ let p1 : Player.player =
 let _ = print_endline (Player.string_of_player p1)
 
 let main () =
-  let map = W.image "risk_board.png" in 
+  let img1 = W.image ~w:100 ~h:100 ~bg:Draw.(opaque white) image_file  in 
   let input = W.text_input ~max_size:200 ~prompt:"Enter your name" () in
   let label = W.label ~size:10 (Player.string_of_player p1) in
   let layout = L.tower [L.resident ~w:1000 input;
-                       L.resident ~w:1000 ~h:400 label; L.resident ~w:100 ~h:100 map] in
+                       L.resident ~w:1000 ~h:400 label; L.resident ~w:100 ~h:100 img1] in
   let action ti l _ =
     let text = W.get_text ti in
     W.set_text l ("Hello " ^ text ^ "!") in
