@@ -1,0 +1,58 @@
+(** @canonical Lib.Attack *)
+module Attack = Lib__Attack
+
+
+(** @canonical Lib.Authors *)
+module Authors = Lib__Authors
+
+
+(** @canonical Lib.Card *)
+module Card = Lib__Card
+
+
+(** @canonical Lib.Carddata *)
+module Carddata = Lib__Carddata
+
+
+(** @canonical Lib.Continent *)
+module Continent = Lib__Continent
+
+
+(** @canonical Lib.Continentdata *)
+module Continentdata = Lib__Continentdata
+
+
+(** @canonical Lib.Country *)
+module Country = Lib__Country
+
+
+(** @canonical Lib.Countrydata *)
+module Countrydata = Lib__Countrydata
+
+
+(** @canonical Lib.Gain_phase *)
+module Gain_phase = Lib__Gain_phase
+
+
+(** @canonical Lib.Game *)
+module Game = Lib__Game
+
+
+(** @canonical Lib.Misc_helpers *)
+module Misc_helpers = Lib__Misc_helpers
+
+
+(** @canonical Lib.Move_phase *)
+module Move_phase = Lib__Move_phase
+
+
+(** @canonical Lib.Player *)
+module Player = Lib__Player
+
+
+(** @canonical Lib.Testdata *)
+module Testdata = Lib__Testdata
+
+
+(** @canonical Lib.World *)
+module World = Lib__World

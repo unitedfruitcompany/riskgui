@@ -1,0 +1,58 @@
+Steps:
+
+Go to "https://github.coecis.cornell.edu/ak829/CS-3110-Final-Project-Risk"
+and click on the green "code" button. You should see an option to
+"Download ZIP". Click on that button and the zip for the project should be
+downloaded onto your computer. Now we will do the following:
+
+1) Go into your Linux terminal and run the following:
+
+mkdir riskGame
+
+2) Move that ZIP file into your work directory. Zip directions to the credit
+of Cornell, found at (https://www.cs.cornell.edu/courses/cs3110/2022sp/a1/).
+
+Linux and Mac: You have it easy. Just move the ZIP file into the a1 directory 
+you created earlier through whatever means you normally would use.
+
+Windows: You need to get that ZIP file into your WSL filesystem. 
+Here are a few options, listed (I hope) from least to most annoying:
+
+Option 1. Open the Windows File Explorer and navigate to \\wsl$. 
+There you will see your installed Ubuntu distributions. 
+(If not, open an Ubuntu terminal, leave it running, 
+and try again with File Explorer.) You can navigate to your WSL 
+home directory at /home/<your_wsl_username>, open the riskGame directory 
+you created earlier, then drag-and-drop the ZIP file into it.
+
+Option 2. Let’s assume you saved the ZIP file in your Downloads folder 
+on your C drive under the name CS-3110-Final-Project-Risk-main.zip. 
+In Ubuntu, cd into the riskGame directory you created earlier, 
+then run this command:
+
+$ cp /mnt/c/Users/<your Windows user name>/Downloads/CS-3110-Final-Project-Risk-main.zip
+ 
+That will copy the ZIP file from Windows into WSL.
+
+Option 3. Open VS Code from WSL, making sure that the bottom left of the 
+VS Code window has a green area that says “WSL: Ubuntu-20.04”. Use VS Code 
+to open the a1 directory you created earlier inside your WSL home directory.
+Drag the ZIP file from wherever you saved it into the VS Code explorer pane, 
+inside the a1 folder. That will copy the ZIP file into your WSL filesystem.
+
+3) Extract the ZIP file. Do this from the terminal, not from a graphical 
+interface. First, run cd riskGame to enter the directory you created earlier. 
+Then run 
+
+unzip CS-3110-Final-Project-Risk-main.zip. 
+
+You should now see all of the Risk game code extracted into your riskGame 
+directory. For example, if you run ls, you will see a src directory, a Makefile, 
+a dune file, etc. 
+
+4) Once you're in the project, type "make build".
+
+5) Once the build is finished, type "make run" to run the project and the game
+should run!
+
+Side note: to run the tests, type "make tester" in the terminal
